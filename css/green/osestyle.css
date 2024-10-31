@@ -1,0 +1,1436 @@
+/******************************************************************************************************************
+ * START of grid.css - must be first in file
+ ******************************************************************************************************************/
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+
+    Ose tagged v1.1
+
+    Tagged JO  short for the work done in January to remove the fixed width constraints
+           JOC    jan colour neutral changes
+*/
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.osegrid_2,
+/* JO .osegrid_3, */
+.osegrid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+/* JO .osegrid_8,*/
+.grid_9,
+/* JO .osegrid_10,*/
+.grid_11,
+/* JO .osegrid_12,*/
+.grid_13,
+.grid_14,
+.grid_15
+/* JO .osegrid_16*/ {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Grid >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_16 .grid_1 {
+	width:60px;
+}
+
+.osecontainer_16 .osegrid_2 {
+	width:120px;
+}
+
+.container_16 .grid_5 {
+	width:300px;
+}
+
+.container_16 .grid_7 {
+	width:420px;
+}
+
+.container_16 .grid_9 {
+	width:540px;
+}
+
+.container_16 .grid_11 {
+	width:660px;
+}
+
+.container_16 .grid_13 {
+	width:780px;
+}
+
+.container_16 .grid_14 {
+	width:840px;
+}
+
+.container_16 .grid_15 {
+	width:900px;
+}
+
+.container_16 .grid_16 {
+	width:960px;
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.oseclear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	min-height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+
+/*******************************************************************************************************************
+ * END of grid.css
+ *******************************************************************************************************************/
+
+
+
+
+/******************************************************************************************************************
+ * START of style.css
+ ******************************************************************************************************************/
+
+/* CSS Document */
+
+*{padding:0;margin:0}
+
+.oseclear{clear:both}
+div,img,ul,ol,li,p,h1,h2,h3,h4,h5,h6,span,form,input,textarea,a{
+    padding:0px;
+    margin:0px
+}
+img {border:none}
+a,p,ul,li,ol{
+	list-style-type:none
+}
+p{line-height:18px}
+a,a:hover{text-decoration:none}    
+h1{
+	font-size: 22px;
+	font-weight: bolder
+}
+h2{font-size:18px;}
+h3{font-size:14px}
+strong{font-weight:bolder}
+.osefleft{ float:left}
+.fright{float:right}
+
+.osemaincontainer{
+
+}
+
+.logo{padding-top:15px}
+
+/* map searching panel */
+#osemapimage
+{
+    background:url(images/route_map.jpg) no-repeat right top;
+    width: 161px;
+    height: 158px;
+}
+
+#osrAddNewMapTopBdr
+{
+    background:url(images/search_head_topbg.jpg) no-repeat right top;
+    width: 220px;
+    height: 8px;
+}
+
+#osrAddNewMapBtmBdr
+{
+    background:url(images/search_head_bottombg.jpg) no-repeat right top;
+    width: 220px;
+    height: 8px;
+}
+
+/* end of map searching panel */
+
+.osecontent .osecontent_paragraph{
+	/* JO width:460px;*/
+	padding-top:30px
+}
+.osecontent .osecontent_paragraph p{font-size:14px}
+
+.osecontent .osecontent_paragraph a:link,
+.osecontent .osecontent_paragraph a:visited{
+	color:#49C8F5;
+	text-decoration:underline
+}
+.osecontent .osecontent_paragraph a:hover{text-decoration:none}
+.osetitle_meta{padding-bottom:30px; }
+.osetitle_meta h2{
+	font-size:18px;
+	border-bottom:1px solid #BCBEC0;
+	padding:0 0 8px 0;	
+} 
+.osetitle_meta p{padding-top:15px; font-size:14px;  }
+.osetitle_meta a:link,
+.osetitle_meta a:visited { font-size:12px}
+
+.osetraining_hours{
+	margin-bottom: 20px; 
+	float: left;
+}
+
+.oseareas_1column
+{
+    width: 100%;
+}
+
+.oseareas_2column
+{
+    width: 50%;
+}
+
+.oseareas_3column
+{
+    width: 33.3%;
+}
+
+.oseareas_4column
+{
+    width: 25%;
+}
+
+.oseareas_5column
+{
+    width: 20%;
+}
+
+.oseareas_6column
+{
+    width: 16.6%;
+}
+
+.osecontainer_16 .osediffer{margin-right:0}
+.osetraining_hours li{
+	font-weight:bold;
+	font-size:13px;
+	padding:8px 0 11px 0;
+	border-bottom:1px dotted #BCBEC0;
+}
+
+.osetraining_hours li:first-child {
+    border-top: 1px dotted #BCBEC0;
+}
+
+.osered{ color:#006737}
+
+* html .oseleft_content img.oseleft{float:left;}
+.oseleft_block{
+	padding:0 20px 0 20px;
+	min-height:1%;
+}
+
+.osearea_borders
+{
+	border-right:1px solid #E6E7E9;
+	border-left:1px solid #E6E7E9;
+}
+
+.oseinner_left{
+	padding-top:15px;
+	border-bottom:1px solid #E6E7E9
+}
+.oseinner_left img{
+	float:left;
+	padding-right:15px
+}
+
+.oseinner_left h2{
+	font-size:16px;
+	padding-bottom:10px
+}
+.oseinner_left .oseevent_meta{
+	font-size:12px;
+	padding-bottom:10px
+}
+.oseinner_left .oseevent_meta strong.oseloc{
+	float:left;
+}
+.oseinner_left .oseevent_meta strong.osedate{
+	float:right;
+	text-align:right;
+}
+.oseinner_left ul{
+	float:right;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+.oseinner_left ul li{
+	padding:0 4px;
+	float:left
+}
+.oseleft_block ul.oseindex{
+	padding-top:40px;
+	padding-bottom:20px;
+	float:right
+}
+.oseleft_block ul.oseindex li{
+	float:left;
+	padding:0 9px;
+	border-right:1px solid #BEBFC0
+}
+
+.oseleft_block ul.oseindex li:last-child 
+{
+    border-right: none;
+    padding-right: 0px !important;
+}
+
+.oseleft_block ul.oseindex li.final{border:none}
+.oseleft_block ul.oseindex li a:link,
+.oseleft_block ul.oseindex li a:visited{
+	color:#7E7F81;
+	padding:3px 5px;
+	font-weight:bold
+}
+.oseleft_block ul.oseindex li a:hover{
+	color:#ffffff;
+	background:#49C9F5
+}
+.oseleft_block ul.oseindex li a.oseactive{color:#49C9F5}
+.oseleft_block ul.oseindex li img{padding-left:10px}
+
+.oseevent_icon li a:link,
+.oseevent_icon li a:visited
+{
+		display:block;
+		height:22px;
+		background:url(images/event-icons.gif) no-repeat;	
+}
+.oseevent_icon li a.oseemail:link,
+.oseevent_icon li a.oseemail:visited
+{	width:24px;	
+}
+.oseevent_icon li a.osenote:link,
+.oseevent_icon li a.osenote:visited
+{
+	width:22px;
+	background-position:-42px 0px
+}
+.oseevent_icon li a.osecomp:link,
+.oseevent_icon li a.osecomp:visited
+{
+	width:22px;
+	background-position:-82px 0px
+}
+
+.oseevent_icon li a.osefood:link,
+.oseevent_icon li a.osefood:visited
+{
+	width:22px;
+	background-position:-122px 0px
+}
+
+.oseevent_icon li a.osepointer:link,
+.oseevent_icon li a.osepointer:visited
+{
+	width:22px;
+	background-position:-163px 0px
+}
+
+.oseevent_icon li a.osemedical:link,
+.oseevent_icon li a.osemedical:visited
+{
+	width:22px;
+	background-position:-203px 0px
+}
+.oseevent_icon li a.osetoilet:link,
+.oseevent_icon li a.osetoilet:visited
+{
+	width:22px;
+	background-position:-243px 0px
+}
+
+.oseevent_icon li a.osepark:link,
+.oseevent_icon li a.osepark:visited
+{
+	width:22px;
+	background-position:-284px 0px
+}
+.oseevent_icon li a.osedrink:link,
+.oseevent_icon li a.osedrink:visited
+{
+	width:22px;
+	background-position:-324px 0px
+}
+
+.oseright_sidebar{
+	width:220px;
+}
+
+.oseinner_section{
+	background:url(images/sidiebar_inner_bottombg.png) no-repeat left bottom;
+	padding-bottom:4px;
+	margin-bottom:13px
+}
+.oseinner_section .oseheading{
+	background:url(images/heading_bg.jpg) no-repeat;
+	height:19px;
+	padding:3px 0 0 10px;
+}
+.oseheading h2{
+	font-size:14px;
+	float:left;
+	color:#ffffff;
+	text-shadow:0 1px #1D6F92;	
+}
+.oseheading a.osehead_bg:link,
+.oseheading a.osehead_bg:visited{
+	display:block;
+	float:right;
+	width:10px;
+	height:6px;
+	background:url(images/heading_up.png) no-repeat;
+	margin:6px 10px 0 0;
+}
+.oseheading a.osealter_bg:link,
+.oseheading a.osealter_bg:visited{
+	background:url(images/heading_down.png) no-repeat;		
+}
+.oseinner_block{
+	background:#ffffff;
+	border-left:1px solid #E6E7E9;
+	border-right:1px solid #E6E7E9;
+	padding:10px 0 0 0
+}
+.oseinner_block form{
+	background:url(images/search_areabg.jpg) repeat-x;
+	border-bottom:1px solid #E6E7E9;
+	padding-bottom:9px; 
+}
+.oseinner_block input.oseform_input{
+	width:160px;
+	border:1px solid #E5E5E5;
+	padding:4px 0;
+	margin: 0px 0px 0px 10px;	
+}
+.oseinner_block .oseform_submit{
+	background:url(images/search_symbol.png) no-repeat;
+	width:24px;
+	height:24px;
+	cursor:pointer;
+	border:none;
+	float:right;
+	margin-right:9px;	
+}
+.oseinner_block ul{
+	padding:0px 20px 10px 10px;
+	min-height:1%;
+}
+.oseinner_block ul li{
+	border-bottom:1px dotted #E6E7E9;
+	padding:5px 0 5px 15px;
+	clear:both;
+}
+.oseinner_block ul li.osecheck{
+	background:url(images/tick_mark.jpg) no-repeat 0 7px
+}
+* html .oseinner_block ul li a:link,
+* html .oseinner_block ul li a:visited{float:left;}
+* html .oseinner_block ul li span{float:left}
+
+.oseinner_block ul li span.oseranks{
+	float:right;
+	padding-right:10px;
+	color:#7E7F81
+}
+
+.oseinner_block ul li a.oseranks:link,
+.oseinner_block ul li a.oseranks:visited{
+	float:right;
+	padding-right:10px;
+	color:#7E7F81
+}
+
+.bgborder{
+	background:#fff; 
+	border-left:1px solid #e6e7e9;
+	border-right:1px solid #e6e7e9;
+	padding-bottom:15px;
+}
+/*** programmes **/
+
+/*** routes***/
+
+.oseinner_left img.osewait{padding-top:15px; padding-right: 3px;}
+
+.osestatic_meta{
+	float:right;
+	text-align:right;
+	width: 130px
+}
+.osestatic_meta strong.total{
+	display:block;
+	padding-top:5px
+}
+.osestatic_meta a.osestatistic:link,
+.osestatic_meta a.osestatistic:visited{
+	float:right;
+	margin-top:8px;
+	background:url(images/route_statistics.jpg) no-repeat;
+	width:102px;
+	height:17px
+}
+.osestatic_meta a.osestatistic:link span,
+.osestatic_meta a.osestatistic:visited span{
+	background:url(images/static_anchorbg.jpg) no-repeat;
+	float:right;
+	width:20px;
+	height:11px;
+	margin-top:3px;
+	margin-right:4px	
+}
+.osestatic_meta a.osestatistic:link span.oseroute,
+.osestatic_meta a.osestatistic:visited span.oseroute{
+	background:url(images/static_activebg.jpg) no-repeat
+}
+.osestatic_meta a.osestatistic img{
+	float:right;
+	padding-top:3px;
+	padding-right:4px
+}
+.oseinner_left .oseworkouts{
+	background:#F8F8FA;
+	margin-top:20px;
+	border-top:1px solid #E6E7E9;
+	border-bottom:1px solid #BDBFC1;
+	padding-left:7px;
+	padding-right:6px
+}
+.oseworkouts .oseinner_workouts{float:left}
+
+.oseinner_workouts li.oseworkout_section{
+	float:left;
+	width:141px;
+	padding-right:24px;
+	background: none
+}
+.oseworkouts .oseinner_workouts img{	
+	float:left;
+	padding-right:12px;
+	padding-top:14px
+}
+.oseinner_workouts li.osediffer{padding-right:0}
+
+.oseinner_workouts .osetotal_workouts{ width:104px}
+		
+.oseworkouts .oseinner_workouts strong{
+	display:block;
+	font-size:14px;
+	padding-bottom:5px;
+	margin-bottom:6px;
+	border-bottom:1px solid #BDBFC1 
+}
+.oseworkouts .osediffer{margin-right:0}
+
+.oseworkouts a.oseview_route:link,
+.oseworkouts a.oseview_route:visited{
+	background:url(images/view_routs.jpg) no-repeat right;
+	float:right;
+	height:18px;
+	margin:7px 6px 8px	0;
+	padding:3px 25px 0 0
+}
+.oseleft_block .osebottom_pad{padding-bottom:15px}
+
+.oseinner_section .osesearch_head{
+	background:url(images/search_heading_bg.jpg) no-repeat;
+	height:27px;
+	padding:9px 10px 0 58px
+}
+.oseinner_block .block_form{border-bottom:none}
+
+.oseright_sidebar .oseleft{
+	background:url(images/search_heading_bottombg.jpg) no-repeat left bottom;
+	margin-bottom:20px
+}
+.oseinner_section .osemap_new{padding:43px 30px 0px 30px}
+
+.oseright_sidebar .osenobg{
+	background:none
+}
+.oseinner_section .osemap_new h2{
+	font-size:16px;
+	color:#404041;
+	padding-bottom:10px
+}	
+.oseinner_section .osemap_new strong{
+	display:block;
+	color:#404041;
+	font-size:10px;
+	padding-bottom:20px
+}	
+.oseinner_section .osemap_new a:link,
+.oseinner_section .osemap_new a:visited
+{
+	display:block;
+	background:url(images/new_route.jpg) no-repeat;
+	width:120px;
+	height:29px;
+	color:#ffffff !important;
+	padding:10px 0 0 44px;
+	margin-bottom:25px;
+	font-weight:bold;
+	cursor:pointer;
+}
+.oserout_left{
+	float:left;
+	width:100px;
+}
+
+.oseforce_noleftmargin
+{
+    margin-left: 0px; 
+}
+
+.oserout_right_noleftmargin
+{
+    margin-left: 0px; 
+}
+
+.oserout_right_noleftmargin
+{
+    margin-left: 0px; 
+}
+
+.oserout_right
+{
+    margin-left: 100px; 
+    margin-right: 130px; 
+}
+/** routes **/
+
+/** blog **/
+.container_16 .no_bottempad{padding-bottom:0}
+
+.container_16 .blog_left_content{
+	width:632px;
+	background:none
+}
+.blog_left_content .block_slider{ padding-bottom:40px}
+
+.blog_left_content .alter_color{ background:#ffffff}
+
+.oseinner_left img.blog_image{
+	border:1px solid #E6E7E9;
+	padding-right:0;
+	margin-right:15px
+}
+.oseinner_left .main_blogmeta{
+	width:491px;
+	padding-top:25px;
+	padding-bottom:11px;
+	border-bottom:1px solid #E6E7E9
+}
+* html .oseinner_left .main_blogmeta{padding-top:12px}
+ 
+.container_16 .meta_blog{width:311px}
+
+.meta_blog .head_meta h2{padding-bottom:2px}
+
+.meta_blog .head_meta p a:link,
+.meta_blog .head_meta p a:visited{text-decoration:underline}
+
+.meta_blog .head_meta p a:hover{text-decoration:none}
+
+.osestatic_meta a.hide:link,
+.osestatic_meta a.hide:visited{
+	 background:none;
+	 color:#000000;
+	 font-size:11px;
+	 margin-top:2px
+}
+.osestatic_meta a.hide:link span,
+.osestatic_meta a.hide:visited span{
+	margin-left:6px;
+	margin-right:0
+}
+.oseinner_left .blog_paragraph{
+	float:right;
+	border-bottom:none;	
+	padding-bottom:0
+}
+.oseinner_left .blog_paragraph p{line-height:20px}
+
+.blog_paragraph a.oseview_route:link,
+.blog_paragraph a.oseview_route:visited{
+	background:url(images/view_routs.jpg) no-repeat right;
+	float:right;
+	height:18px;
+	font-weight:bolder;
+	margin:20px 10px 3px 0;
+	padding:3px 25px 0 0
+}
+.blog_paragraph p a:link,
+.blog_paragraph p a:visited{font-weight:bolder}
+
+.container_16 .blog_right_sidebar{width:304px}
+
+.oseinner_section .blog_head{
+	background:url(images/blog_headingbg.png) no-repeat;
+	width:282px;
+	height:27px;
+	padding-left:12px
+}
+.oseright_sidebar .blog_inner_section{
+	background:url(images/blog_search_bottombg.png) no-repeat left bottom;
+	float:left
+}
+* html .ieleft{float:left} 
+
+.oseright_sidebar .blog_section{margin-bottom:0}
+
+.oseinner_block form input.blog_input{
+	width:126px;
+	margin-left:5px;
+	margin-right:5px
+}
+.oseinner_block form.block_form select{
+	margin-left:9px;
+	color:#7E7F81;
+	border:1px solid #E5E5E5;
+	padding:3px;
+	width:116px
+}
+.oseinner_section .block_ranks ul{
+	margin-top:0;
+	padding-top:0;
+	margin-left:10px
+}
+.oseinner_section .block_ranks ul li{padding:0;}
+
+.oseinner_section .block_ranks ul li span.oseranks{
+	padding-right:0;
+	color:#7E7F81
+}
+.oseinner_section .block_ranks ul li span.select_all{font-size:11px}
+.oseinner_section .block_ranks ul li.browse_cat{padding:10px 0}
+.oseinner_section .block_ranks ul li a.ranks_list:link,
+.oseinner_section .block_ranks ul li a.ranks_list:visited{
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px
+}
+.oseinner_section .block_ranks ul li a.ranks_list:hover{
+	background:#F8F8FA;
+	color:#EB6B24
+}
+.oseinner_section .block_ranks ul li span.oseranks a:hover{color:#7E7F81}
+
+.oseright_sidebar .main_comments{padding:0 10px 0 20px}
+
+.oseright_sidebar .final_rank{padding-bottom:35px}
+
+.oseinner_section .inner_right{
+	width:265px;
+	padding-bottom:10px;
+	padding-top:15px;
+	border-bottom:1px solid #E6E7E9
+}
+.oseright_sidebar .blog_features{padding-bottom:20px}
+
+.inner_right img{
+	float:left;
+	margin-right:14px;
+	border:1px solid #E6E7E9
+}
+.inner_right .osecomments{
+	width:193px;
+	float:right
+}
+.inner_right .osecomments a:link,
+.inner_right .osecomments a:visited{	
+	font-weight:bolder;
+	color:#000000;
+	float:left;
+	font-size:11px;
+	margin-bottom:3px
+}
+.inner_right .osecomments p{font-size:11px}
+
+.inner_right .osecomments h3 a:hover{ color:#49C8F5}
+
+.inner_right .osecomments a.comment_rank:link,
+.inner_right .osecomments a.comment_rank:visited{
+	color:#7E7F81;
+	margin-bottom:5px;
+	font-size:12px
+}
+.inner_right .osecomments ul li.last_item{padding-right:0}
+
+.inner_right .osecomments ul{
+	padding:0;
+	padding-top:5px;
+	float:right
+}
+.inner_right .osecomments ul li{
+	border:none;
+	border-right:1px solid #BCBEC0;
+	padding:0 10px;
+	clear:none;
+	float:left
+}
+.inner_right .osecomments ul li.last_item{border:none}
+
+.inner_right .osecomments ul li img{
+	border:none;
+	padding-top:4px;
+	margin:0
+}
+
+
+.inner_right .osecomments ul li img.blog_rank{margin-right:10px}
+
+.main_comments .blog_features span{
+	float:left;
+	font-size:12px;
+}
+.main_comments .blog_features span.top_rated{float:right}
+
+* html .main_comments .blog_features span.top_rated{ padding-top:2px} 
+
+.main_comments .blog_features a:link,
+.main_comments .blog_features a:visited{
+	font-size:11px;
+	font-weight:normal; 
+	margin-left:10px;
+	color:#7E7F81
+}
+/** Blog **/
+
+
+/* Additions **/
+.oseroutepic
+{
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    width: 25px;
+    height: 25px;
+    padding-right:12px;
+    padding-top:14px;
+    float: left;
+}
+
+.oseperson
+{
+    background-image: url(images/human_body.jpg);
+}
+
+.osemaxele
+{
+    background-image: url(images/zigzag.jpg);
+}
+
+.osefastrun
+{
+    background-image: url(images/fast_run.png);
+}
+
+.osefastride
+{
+    background-image: url(images/fast_bike.png);
+}
+
+.oseroutepromo
+{
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    width: 82px;
+    height: 82px;
+}
+
+.osepbike
+{
+    background-image: url(images/action_bike.png);
+}
+
+.osepcycle
+{
+    background-image: url(images/action_cycle.png);
+}
+
+.oseprun
+{
+    background-image: url(images/action_run.png);
+}
+.osepswim
+{
+    background-image: url(images/action_swim.png);
+}
+
+.osepwalk
+{
+    background-image: url(images/action_walk.png);
+}
+
+.oseheart
+{
+    background-image: url(images/heart.jpg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    padding-top:15px; 
+    margin-right: 3px;
+}
+
+.oseratenone
+{
+    background-image: url(images/RateNone.jpg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;padding-top:15px; 
+    padding-right: 3px;
+}
+
+.oseratefull
+{
+    background-image: url(images/RateFull.jpg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    padding-top:15px; 
+    padding-right: 3px;
+}
+
+.oseratehalf
+{
+    background-image: url(images/RateHalf.jpg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    padding-top:15px; 
+    padding-right: 3px;
+}
+
+div.oserout_right ul.oseratings
+{
+    float: left;    
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 0;
+}
+
+/* Generic float right - only used in event api sub-event category */
+.osefright {
+    float: right;
+}
+
+/* Facility text on detail page */
+.osefacilitytext 
+{
+    float: none; 
+    margin-left: 10px; 
+    font-weight: bold; 
+    font-size: 15px; 
+    padding-bottom: 15px; 
+    vertical-align: middle;
+}
+
+
+/* Contact text on detail page */
+.osecontacttext
+{
+    float:none; 
+    margin-left: 0px; 
+    font-weight: bold; 
+    font-size: 13px; 
+    padding-bottom: 15px; 
+    vertical-align: middle;
+}
+
+/* Routes API search */
+#fmSearchWrap {
+  background: url(images/search_areabg.jpg) repeat-x;
+  border-bottom: medium none;
+  padding-bottom: 9px; 
+  cursor: pointer;
+}
+    
+.fleft b {
+ color: Red;
+}
+    
+.fleft img.wait {
+ padding-right: 3px;
+}
+
+.left_block ul.index li a:hover{background:none}
+
+
+/*************************************** Additions ********************************/
+img.osepromoimg 
+{
+    height: 82px;
+    width: 82px;
+}
+
+#osrMapView
+{
+    height:100%;
+    text-align:center;
+}
+
+.oseheader h1
+{
+  border-bottom: 1px solid #BCBEC0; 
+  font-size: 18px; 
+  padding:0 0 8px;
+}
+
+.osesmallhead
+{
+   font-size: 18px; 
+}
+
+#oseMaster
+{
+    font:12px Arial,Helvetica,sans-serif;
+    /*JOC color:#000000;*/
+    padding:0px;
+    margin:0px;    
+}
+
+#oseMaster h2
+{
+    padding:0px;
+    margin:0px;
+    line-height: normal;
+    font-weight: bold;
+    color:#FFFFFF;
+    clear: none;
+}    
+
+#oseMaster a,
+#oseMaster p,
+#oseMaster ul,
+#oseMaster li,
+#oseMaster ol{
+	list-style-type:none
+}
+
+#oseMaster p{line-height:18px; margin-bottom: 12px;}
+
+#oseMaster a, #oseMaster a:hover{text-decoration:none; color: Black}    
+
+/* Restrict max width of images uploaded within this container */
+.fmPreviewContainer img
+{
+   max-width: 674px;
+}
+
+/* avoid lists and paging having bulletpoints */
+#oseRoutePanel ul.oseindex li
+{
+  list-style-type:none;
+  padding: 0 9px;
+  margin: 0;
+  background: none;
+}
+
+#oseMaster ul.oseinner_workouts li
+{
+  list-style-type: none;
+}
+
+#oseMaster ul.oseratings li
+{
+  list-style-type: none;
+}
+
+#oseMaster ul.osetraining_hours li
+{
+  list-style-type: none;
+}
+
+#oseMaster ul.oseevent_icon li
+{
+  list-style-type: none;
+}
+
+ul.oseevent_icon li a
+{
+	cursor: default;
+}
+
+/* new box style */
+.oseBoxTop{
+    background: url("images/white-top-m.png") repeat-x  ;
+    height:4px;
+}
+.oseBoxTopLeft{
+    background: url("images/white-top-l.png") no-repeat scroll left top transparent;
+    height: 4px;
+}
+.oseBoxTopRight{
+    background: url("images/white-top-r.png") no-repeat scroll right top transparent;
+    height: 4px;
+}
+.oseBoxBottom{
+    background: url("images/white-bottom-m.png") repeat-x  ;
+    height:4px;
+}
+.oseBoxBottomLeft{
+    background: url("images/white-bottom-l.png") no-repeat scroll left top transparent;
+    height: 4px;
+}
+.oseBoxBottomRight{
+    background: url("images/white-bottom-r.png") no-repeat scroll right top transparent;
+    height: 4px;
+}
+
+.osebottom_content
+{
+    margin-right: 240px;
+}
+
+.osebottom_content_nosidebar
+{
+    
+}
+
+.oseFilterPanelOn{
+    float:left;
+    margin-left: -220px;
+}
+
+.oseFilterPanelOff{
+    float:left;
+    display: none;
+    visibility: hidden;
+}
+
+#osrWideStack{
+    overflow: hidden;
+    width:100%;
+}
+
+#oseBottomWrapper
+{
+    float:left;
+    width: 100%;
+}
+
+#oseAreasPanel ul:first-child{
+margin:0;
+}
+
+#oseAreasPanel ul:first-child li{
+margin:0;
+}
+
+#oseCrumbPanel
+{
+   padding-bottom: 0px;
+}
+
+
+#oseAreasPanel ul{
+margin: 0px 0px 0px 0px;
+padding: 0;
+}
+
+#oseAreasPanel ul li
+{
+    margin: 0px 0px 0px 22px;
+}
+
+.oseevent_wrapper
+{
+    float: left;
+    width: 100%;
+}
+
+.oseevent_content
+{
+    margin-left: 100px;
+}
+
+.oseevent_leftcontent
+{
+    margin-left: -100%; 
+    width: 100px; 
+    float: left;
+}  
+
+.osetop_content
+{
+    margin-bottom: 20px;
+}
+
+#oseMaster ul.oseFilterList
+{
+    margin-bottom: 0px;
+}
+
+#oseMaster ul.oseratings li{
+	padding:0 4px;
+	margin: 0;
+}
+
+/* Club specific styles */
+.osrClubMap
+{
+	height: 250px;
+	display: none;
+}
+		
+.osrShowClubMap
+{
+	color: #EB6909;
+}
+		
+
+
+/* HTML Route Mapper */
+#fitMapBtnUndo { background:url(images/map/undo.png) no-repeat 20px 0px; }
+#fitMapBtnClear { background:url(images/map/clear.png) no-repeat 20px 0px; }
+#fitMapBtnPlotBack { background:url(images/map/plotback.png) no-repeat 20px 0px; }
+#fitMapBtnOutBack { background:url(images/map/outback.png) no-repeat 20px 0px; }
+#fitMapBtnSave { background:url(images/map/save.png) no-repeat 20px 0px; }
+
+#fitMapBtnSearch { background:url(images/map/search.png) no-repeat 0px 0px; min-height: 24px; min-width: 24px; display: block; float: right; margin-right: 13px; cursor: pointer;}
+
+
+#fitMapDistance
+{
+	padding-top: 15px;
+	padding-left: 15px;
+}
+	
+#fitMapDistance span
+{
+	font-size: 12px;
+	color: #6E6E6E;
+	
+}
+
+.fitMapBtn
+{
+    min-width: 24px;
+    min-height: 24px;
+    background-position:left center;
+    padding-bottom: 13px;
+    margin-top: 13px;
+    display: block;
+    border-bottom: 1px solid #C2CFE4;
+}
+
+#fitSearchText
+{
+	color: #6E6E6E;
+	font-size: 12px;
+	font-family: helvetica, Arial;
+	margin-left: 10px;
+}
+
+#fitSearchAddress
+{
+	border-color: Gray;
+	width: 135px;
+	margin-left: 10px;
+	border: 1px solid #6E6E6E;
+	font-size: 13px;
+	padding: 4px;
+	height: 16px;
+}
+
+.fitMapBtnText
+{
+	margin-left: 50px;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#fitDistanceType, #fitDistance
+{
+	margin-left: 5px;
+}
+
+#fitActivity, #fitExercise, #fitEvent
+{
+	width: 128px;
+	font-size: 14px;
+	padding: 3px;
+}
+
+#fitEvent
+{
+	width: 344px;
+}
+
+#fitDuration, #fitDate, #fitPulse, #fitCalories
+{
+	width: 125px;
+	font-size: 14px;
+	padding: 3px;
+}
+
+#fitRouteKeywords, #fitRouteDesc, #fitRouteTitle
+{
+	font-size: 14px;
+	padding: 3px;
+	width: 336px;
+}
+
+#fitMappedActivity label
+{
+	font-size: 11px;
+	font-weight: bold;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.fitLabel
+{
+	text-align: right;
+	width: 75px;
+}
+
+#fitSaveDialog
+{
+	overflow:hidden;
+}
+
+#fitMappedActivity hr
+{
+	width: 425px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #A6C9E2;
+}
+
+#fitMappedActivity button
+{
+	margin-top: 15px;
+}
+
+div#fitMappedActivity label.error
+{
+	display: block;
+}
+
+#ui_tpicker_time_label_fitDuration
+{
+	float:left;
+	padding-right: 5px;
+}
+
+.ui-datepicker-current
+{
+	display: none;
+}
+
+#fitControlPanel
+{
+	float: left;
+	width: 198px; /*Width of left column*/
+	margin-left: -100%;
+	background: white;
+	height: 100%;
+	border-right: 1px solid #6E6E6E;
+}
+		
+.fitControlPanelMapInner
+{
+	padding-top: 10px;
+}
+		
+.fitMapInner
+{
+	margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#fitMapContentWrapper
+{
+	float: left;
+	width: 100%;
+}
+		
+#fitMapContentColumn
+{
+	margin-left: 199px; /*Set left margin to fitControlPanelWidth*/
+}
+
+#oseMapperControl table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#nosilverlight td
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#fitEvent
+{
+	width: 344px;
+}
+
+div#oseFilterPanel ul
+{
+   margin-bottom: 0px;
+}
+
+div#fitMap
+{
+	width: 100%; height: 600px; margin: auto; margin-top: 0px; border: 1px solid gray;
+}
+
+div#fitAltChart
+{
+	width:100%; height:200px; margin: auto; border: 1px solid gray;
+}
